@@ -1,0 +1,53 @@
+/* Formatando a página do cardápio */
+
+
+/* Formatando as pizzas em cards usanso Grid */
+.pizzas-salgadas, .pizzas-doces {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+
+/* Formatando cada pizza dos cards */
+.pizza-salgada, .pizza-doce {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease;
+  border: 2px solid #b22222;
+}
+
+.pizza-salgada:hover, .pizza-doce:hover {
+  transform: scale(1.03);
+}
+
+.pizza-salgada img, .pizza-doce img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #b22222;
+}
+
+.categoria {
+    margin-bottom: 30px;
+}
+
+.pizza-salgada p, .pizza-doce p {
+  margin: 10px 0 5px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.pizza-salgada p:last-child, .pizza-doce p:last-child {
+  font-weight: bold;
+  color: #b22222;
+  font-size: 1.1em;
+}
+
+.pizzas-doces {
+    padding-bottom: 50px;
+}

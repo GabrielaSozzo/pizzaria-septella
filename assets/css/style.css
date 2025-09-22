@@ -1,0 +1,274 @@
+/* Formatando o header */
+
+/* Video */
+.header-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Conteudo sobreposto ao video */
+.conteudo-sobreposto {
+  background-color: rgba(0, 0, 0, 0.322);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 5%;
+  z-index: 2;
+}
+
+/* Nav flexivel */
+.header-video .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+/* Formatando o logo do header*/
+.logo-header img {
+  width: 150px;
+}
+
+/* Formatando os links */
+.ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.ul li a:hover {
+  font-weight: bold;
+  color: #c62828;
+}
+
+
+
+/* Formatando as cores do fundo */
+.cardapio {
+  background-color: #fcf6c5;
+}
+.nossa-localizacao {
+  background-color: #fcf6c5;
+}
+.reserva {
+  background-color: #f9f9f9;
+}
+.nosso-restaurante {
+  background-color: #f9f9f9;
+}
+.cardapio2 {
+  background-color: #f9f9f9;
+}
+
+
+/* Formatando a area de cardapio */
+.imagem-pizza {
+  overflow: hidden;
+  position: relative;
+  transition: 1s;
+}
+
+.nome-pizza {
+  position: absolute;
+  top: 50%; /* centro vertical */
+  left: 50%; /* centro horizontal */
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 100%;
+  border-radius: 10px;
+  width: auto;
+  text-align: center;
+  transition: opacity 0.5s ease;
+}
+
+.imagem-pizza:hover {
+  transform: scale(1.01);
+  border-radius: 10px;
+}
+
+.imagem-pizza:hover h4 {
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+}
+
+.cardapio .container .imagens-pizzas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.cardapio img {
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.imagem-pizza:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Formatando a seção nosso restaurante */
+.nosso-restaurante .container .imagens-restaurante {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nosso-restaurante img {
+  width: 50%;
+  height: 420px;
+  border-radius: 10px;
+  object-fit: cover;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+/* Formatando a seção nossa localizacao */
+.mapa {
+  display: flex;
+}
+
+.descricao-geral {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
+  padding-bottom: 20px;
+}
+
+iframe {
+  padding: 20px;
+  border-radius: 40px;
+}
+
+
+
+/* Formatando o formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.linha-formulario {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+label {
+  font-weight: bold;
+  color: #c62828;
+  padding-bottom: 5px;
+}
+
+input,
+textarea,
+button {
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #c62828;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+
+
+/* Formatando o footer */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 30px;
+  background-color: #255f29; /* fundo escuro */
+  color: #f1efe9; /* texto claro */
+  max-width: 100%;
+}
+
+/* Cada seção é uma coluna vertical */
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Formatando o logo do footer */
+.logo-footer img {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Ícones sociais organizados com espaçamento */
+.redes-e-pagamento .icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #f1efe9;
+}
